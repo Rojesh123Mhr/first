@@ -1,0 +1,244 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightgray;
+}
+.navbar{
+    background-color: black;
+    overflow: auto;
+    margin: 13px 3px;
+    border-radius: 15px;
+    display: flex;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    padding: 13px 5px;
+    margin: 4px 4px;
+    align-items: center;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 6px 8px;
+    background-color: rgb(41, 38, 38);
+    border-radius: 8px;
+}
+.navbar li a:hover{
+    background-color: lightgray;
+    color: black;
+    border-radius: 8px;
+}
+table{
+    border-radius: 6px;
+    border-collapse: collapse;
+    margin: 7px 15px;
+    background-color: azure;
+}
+.container{
+    margin: 23px 3px;
+}
+.container li{
+    padding-right: 8px;
+    margin: 3px 3px;
+}
+.search{
+    float: right;
+    margin: 6px 30px;
+    padding: 5px 5px;
+    
+}
+.search input{
+    border-radius: 8px;
+    padding: 5px 6px;
+    width: 157;
+}
+.box{
+    display: inline-block;
+    border: 7px solid rgb(92, 90, 90);
+    height: 750px;
+    width: 350px;
+    max-width: 350px;
+    margin: 30px;
+    border-radius: 40px;
+    /* padding: 9px 19px; */
+    /* color: white; */
+    font-size: 20px;
+    /* margin-left: 40px; */
+    /* text-align: center; */
+    background-color: rgb(169, 163, 163);
+    border-inline: white;
+    overflow: hidden;
+    align-items: center;
+    padding: 15px 15px;
+}
+iframe{
+    border-radius: 40px;
+    /* padding: 7px 7px; */
+}
+h4{
+    color: rgb(147, 92, 34);
+    margin: 6px 10px;
+    font-size: 16px;
+    background-color: wheat;
+    padding: 4px 7px;
+    max-width: 450px;
+    border-radius: 30px;
+    display: flex;
+}
+img{
+    margin: 10p 10px;
+    border-radius: 20px;
+}
+#table1{
+    display: flex;
+    margin: 3px 3px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    max-width: 600px;
+    padding: 7px 7px;
+    height: auto;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+/* From Uiverse.io by doniaskima */ 
+.btn-17,
+.btn-17 *,
+.btn-17 :after,
+.btn-17 :before,
+.btn-17:after,
+.btn-17:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-17 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.btn-17:disabled {
+  cursor: default;
+}
+
+.btn-17:-moz-focusring {
+  outline: auto;
+}
+
+.btn-17 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-17 [hidden] {
+  display: none;
+}
+
+.btn-17 {
+  border-radius: 99rem;
+  border-width: 2px;
+  padding: 0.8rem 3rem;
+  z-index: 0;
+}
+
+.btn-17,
+.btn-17 .text-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-17 .text-container {
+  display: block;
+  mix-blend-mode: difference;
+}
+
+.btn-17 .text {
+  display: block;
+  position: relative;
+}
+
+.btn-17:hover .text {
+  -webkit-animation: move-up-alternate 0.3s forwards;
+  animation: move-up-alternate 0.3s forwards;
+}
+
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(80%);
+  }
+
+  51% {
+    transform: translateY(-80%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.btn-17:after,
+.btn-17:before {
+  --skew: 0.2;
+  background: #ffffff;
+  content: "";
+  display: block;
+  height: 102%;
+  left: calc(-50% - 50% * var(--skew));
+  pointer-events: none;
+  position: absolute;
+  top: -104%;
+  transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+
+.btn-17:after {
+  --progress: 0%;
+  left: calc(50% + 50% * var(--skew));
+  top: 102%;
+  z-index: -1;
+}
+
+.btn-17:hover:before {
+  --progress: 100%;
+}
+
+.btn-17:hover:after {
+  --progress: -102%;
+}
